@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
-const assetPrefix =  isProd ? '':'';
+const assetPrefix =  isProd ? '/williamsc_portfolio/' : '',
+  //'':'';
   //'/williamsc_portfolio/' : '',
 
 const nextConfig = {
