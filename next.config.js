@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV === 'production';
+const assetPrefix =  isProd ? '':'';
+  //'/williamsc_portfolio/' : '',
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: isProd ? '/williamsc_portfolio/' : '',
+  assetPrefix: assetPrefix,
   images: {
     loader: "akamai",
     path:"",
