@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
-const assetPrefix =  isProd ? '/williamsc_portfolio/' : '',
+const assetPrefix =  isProd ? '/williamsc_portfolio/' : '';
   //'':'';
   //'/williamsc_portfolio/' : '',
 
